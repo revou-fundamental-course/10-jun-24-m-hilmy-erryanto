@@ -1,16 +1,21 @@
 function convert(){
     let from = document.getElementById("convert-from").value
     let raw = parseFloat(document.getElementById("value").value)
+    let rawFloat = parseFloat(document.getElementById("value").value)
     let sol = document.getElementById("textarea-solution")
     let ans = document.getElementById("textarea-answer")
-    if (from === "Celcius (°C)") {
-        result = (raw * 9/5) + 32
+    console.log(raw)
+    if (isNaN(raw)) {
+        alert('Please insert the value')
+    }
+    else if (from === "Celcius (°C)") {
+        result = (rawFloat * 9/5) + 32
         ans.innerHTML = `${result.toFixed(2)}°F`
-        sol.innerHTML = `${result.toFixed(2)}°F = (${raw.toFixed(2)}°C * 9/5) + 32 `
+        sol.innerHTML = `${result.toFixed(2)}°F = (${rawFloat.toFixed(2)}°C * 9/5) + 32 `
     } else if (from === "Fahrenheit (°F)")  {
-        result = (raw - 32) * 5/9
+        result = (rawFloat - 32) * 5/9
         ans.innerHTML = `${result.toFixed(2)}°C`
-        sol.innerHTML = `${result.toFixed(2)}°C = (${raw.toFixed(2)}°F - 32) * 5/9 `
+        sol.innerHTML = `${result.toFixed(2)}°C = (${rawFloat.toFixed(2)}°F - 32) * 5/9 `
     }
 }
 function clearFields(){
