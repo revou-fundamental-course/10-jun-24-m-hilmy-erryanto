@@ -6,7 +6,7 @@ function convert(){
     let ans = document.getElementById("textarea-answer")
     console.log(raw)
     if (isNaN(raw)) {
-        alert('Please insert the value')
+        alert('Please insert the value to convert')
     }
     else if (from === "Celcius (°C)") {
         result = (rawFloat * 9/5) + 32
