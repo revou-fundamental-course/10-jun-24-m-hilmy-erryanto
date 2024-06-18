@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Temperature</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1 style="text-align: center;">Temperature Converter</h1>
+        </header>
+        <main>
+            <section class="opt-container">
+                <div class="temp-container">
+                    <h3>From:</h3>
+                    <textarea id="convert-from" disabled>Celcius (°C)</textarea>
+                </div>
+                <div>
+                    <button id="reverse" onclick="reverse()"><img id="reverse-img" src="assets/reverse.png" alt="reverse"></button>
+                </div>
+                <div class="temp-container">
+                    <h3>To:</h3>
+                    <textarea id="convert-to" disabled>Fahrenheit (°F)</textarea>
+                </div>
+            </section>
+            <section>
+                <div class="val-container">
+                    <h3>Value to Convert</h3>
+                    <input type="number" id="value" placeholder="Insert Here">
+                </div>
+                <div class="btn-container">
+                    <button id="clear" onclick="clearFields()">CLEAR</button>
+                    <button id="convert" onclick="convert()">CONVERT</button>
+                </div>
+            </section>
+            <hr>
+            <section class="ans-container">
+                <div>
+                    <h3>Answer:</h3>
+                    <textarea name="" id="textarea-answer" disabled></textarea>
+                </div>
+                <div>
+                    <h3>Solution:</h3>
+                    <textarea name="" id="textarea-solution" disabled></textarea>
+                </div>             
+            </section>
+        </main>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

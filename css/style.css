@@ -1,0 +1,103 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+textarea{
+    resize: none;
+    width: 120px;
+    height: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 8px;
+}
+#reverse {
+    width: 23px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#reverse-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+.temp-container{
+    margin: 10px;
+}
+.opt-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+.val-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+.btn-container{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clear{
+        background-color: red;
+        border: none;
+        color: white;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 8px;
+}
+#convert{
+    background-color: green;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#textarea-answer, #textarea-solution{
+    width: 190px;
+    height: 100px;
+    text-align: center;
+    border-radius: 8px;
+}
+.ans-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: auto;
+}
+.ans-container > div {
+    margin: 0 20px;
+}
