@@ -5,6 +5,7 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: lightblue;
 }
 .container{
     background-color: #fff;
@@ -100,4 +101,26 @@ input{
 }
 .ans-container > div {
     margin: 0 20px;
+}
+.logo-container{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.logo{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+#logo-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
 }
